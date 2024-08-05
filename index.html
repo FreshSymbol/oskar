@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__top">
+        <div class="header__logo">
+          <a class="header__logo-link" href="#">
+            <img
+              src="./src/images/logo.svg"
+              alt="логотип компании"
+              class="header__logo-img"
+            />
+          </a>
+          <p class="header__logo-text">Ремонт и дизайн квартир в Москве</p>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#repair" class="nav__link">Ремонт и отделка</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#disign" class="nav__link">Дизайн</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Портфолио</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#price" class="nav__link">Цены</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">О компании</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="social">
+          <a href="whatsapp://send?phone=" class="social__link">
+            <img
+              class="social__img"
+              src="./src/images/whatsapp-icon.svg"
+              alt="иконка ватсап"
+            />
+          </a>
+
+          <a href="tg://resolve?domain=username" class="social__link">
+            <img
+              class="social__img"
+              src="./src/images/telegram-icon.svg"
+              alt="иконка ватсап"
+            />
+          </a>
+        </section>
+
+        <address class="address">
+          <a class="address__phone" href="tel:">+7(950) 918-58-94</a>
+          <a class="address__link" href="">Заказать звонок</a>
+        </address>
+      </section>
+
+      <section class="content">
+        <div class="content__filter"></div>
+        <div class="content__container">
+          <h1 class="content__title">Дизайн интерьера</h1>
+          <p class="content__text">
+            Создайте уникальный дизайн интерьера, обратившись в студию дизайна и
+            ремонта Оскар, – воплотите свои мечты в реальность!
+          </p>
+          <a class="content__link button" href="#repair">
+            РАССЧИТАТЬ СТОИМОСТЬ ONLINE
+          </a>
+        </div>
+
+        <div class="slick">
+          <div>
+            <img src="./src/images/slick-2.png" alt="иконка удобно" />
+            <p>
+              <span class="accent-text"> Комфортное взаимодействие </span> в
+              режиме одного окна
+            </p>
+          </div>
+
+          <div>
+            <img src="/src/images/slick-1.png" alt=" иконнка выгодно" />
+            <p>
+              Ремонт квартир <span class="accent-text">под бюджет</span>
+              <span class="accent-text">Заказчика:</span> от эконом до премиум +
+            </p>
+          </div>
+
+          <div>
+            <img src="./src/images/slick-2.png" alt=" иконка удобно" />
+            <p>
+              <span class="accent-text"> Комфортное взаимодействие </span> в
+              режиме одного окна
+            </p>
+          </div>
+
+          <div>
+            <img src="./src/images/slick-2.png" alt="иконка удобно" />
+            <p>
+              <span class="accent-text"> Комфортное взаимодействие </span> в
+              режиме одного окна
+            </p>
+          </div>
+
+          <div>
+            <img src="/src/images/slick-1.png" alt="иконка выгодно" />
+            <p>
+              Ремонт квартир <span class="accent-text">под бюджет</span>
+              <span class="accent-text">Заказчика:</span> от эконом до премиум +
+            </p>
+          </div>
+
+          <div>
+            <img src="./src/images/slick-2.png" alt=" иконка удобно" />
+            <p>
+              <span class="accent-text"> Комфортное взаимодействие </span> в
+              режиме одного окна
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="content">
+      <section class="repair" id="repair">
+        <h2 class="repair__title">Какие услуги мы оказываем</h2>
+        <h3 class="repair__sub-title">Современный и качественный ремонт</h3>
+        <p class="repair__text">
+          Компания Оскар предлагает вам полный спектр услуг, от разработки
+          дизайн-проекта интерьера квартир, загородных домов, коттеджей,
+          таунхаусов, до финальной уборки после ремонта . Наши опытные
+          специалисты воплотят все ваши пожелания в жизнь.
+        </p>
+
+        <form class="form" id="form-repair" action="/" method="POST">
+          <section class="form__settings">
+            <fieldset class="form__fieldset">
+              <div>
+                <div class="form__dynamic-block">
+                  <p class="form__dynamic-value">0</p>
+                </div>
+                <label class="form__label">
+                  <input
+                    class="form__range"
+                    type="range"
+                    name="metres"
+                    value="1"
+                    min="1"
+                    max="200"
+                    step="1"
+                  />
+                </label>
+              </div>
+
+              <div class="form__block-checkbox">
+                <div>
+                  <input
+                    class="form__checkbox"
+                    type="checkbox"
+                    value="5000"
+                    id="certificate"
+                  />
+                  <label class="form__label" for="certificate">
+                    <span class="opacity-text">Применить сертификат</span>
+                    <span class="bold-text"> на 50000 рублей </span>
+                  </label>
+                </div>
+
+                <div>
+                  <input
+                    class="form__checkbox"
+                    type="checkbox"
+                    id="need-disign"
+                  />
+                  <label class="form__label" for="need-disign"
+                    >не могу определиться нужен дизайн проект
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form__info">
+              <img src="./src/images/group.svg" alt="иконка медали" />
+
+              <div>
+                <h4 class="form__info-title">
+                  С нами вы экономите деньги и время
+                </h4>
+                <p class="form__info-text">
+                  Разработаем дизайн-проект с нуля за 3 недели, быстро вносим
+                  изменения.Сделаем ремонт за 3 мес., даже если другие
+                  предложили сделать его за 5 мес.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <ul class="card__list">
+              <li class="card__item">
+                <div class="card__info">
+                  <h4 class="card__title">Чертежная документация</h4>
+
+                  <p class="card__price">3500 руб/кв.м.</p>
+                  <img
+                    src="./src/images/card-1.jpg"
+                    alt="изображение квартиры"
+                  />
+                  <p class="card__result-price">
+                    итого
+                    <span class="card__result-price_bold"></span> руб.
+                  </p>
+                </div>
+
+                <div class="card__scope">
+                  <div class="card__scope-work">
+                    <p class="card__scope-work-text">Состав работ</p>
+                    <p class="card__scope-work-extend">Развернуть</p>
+                  </div>
+
+                  <div class="card__info-detail">
+                    <div class="card__info-detail-card">
+                      <img
+                        src="./src/images/work.svg"
+                        alt="иконка ремонтных работ"
+                      />
+                      <div class="card__info-detail-block">
+                        <h5 class="card__info-detail-title">
+                          Стоимость дизайн проекта
+                        </h5>
+                        <p class="card__info-detail-text">3900 руб/ м2</p>
+                      </div>
+                    </div>
+
+                    <button class="button">Заказать</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="card__item">
+                <div class="card__info">
+                  <h4 class="card__title">
+                    ⁠Чертежная документация с реалистичной прогулкой по объекту
+                    и 3д-панорамой объекта
+                  </h4>
+
+                  <p class="card__price">3900 руб/кв.м.</p>
+                  <img
+                    src="./src/images/card-2.jpg"
+                    alt="изображение квартиры"
+                  />
+                  <p class="card__result-price">
+                    итого
+                    <span class="card__result-price_bold"></span> руб.
+                  </p>
+                </div>
+
+                <div class="card__scope">
+                  <div class="card__scope-work">
+                    <p class="card__scope-work-text">Состав работ</p>
+                    <p class="card__scope-work-extend">Развернуть</p>
+                  </div>
+
+                  <div class="card__info-detail">
+                    <div class="card__info-detail-card">
+                      <img
+                        src="./src/images/work.svg"
+                        alt="иконка ремонтных работ"
+                      />
+                      <div class="card__info-detail-block">
+                        <h5 class="card__info-detail-title">
+                          Стоимость дизайн проекта
+                        </h5>
+                        <p class="card__info-detail-text">3900 руб/ м2</p>
+                      </div>
+                    </div>
+
+                    <button class="button">Заказать</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="card__item">
+                <div class="card__info">
+                  <h4 class="card__title">
+                    Чертежная документация с 3д- визуализацией всех помещений
+                  </h4>
+
+                  <p class="card__price">5100 руб/кв.м.</p>
+                  <img
+                    src="./src/images/card-3.jpg"
+                    alt="изображение квартиры"
+                  />
+                  <p class="card__result-price">
+                    итого
+                    <span class="card__result-price_bold"></span> руб.
+                  </p>
+                </div>
+
+                <div class="card__scope">
+                  <div class="card__scope-work">
+                    <p class="card__scope-work-text">Состав работ</p>
+                    <p class="card__scope-work-extend">Развернуть</p>
+                  </div>
+
+                  <div class="card__info-detail">
+                    <div class="card__info-detail-card">
+                      <img
+                        src="./src/images/work.svg"
+                        alt="иконка ремонтных работ"
+                      />
+                      <div class="card__info-detail-block">
+                        <h5 class="card__info-detail-title">
+                          Стоимость дизайн проекта
+                        </h5>
+                        <p class="card__info-detail-text">3900 руб/ м2</p>
+                      </div>
+                    </div>
+
+                    <button class="button">Заказать</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </form>
+      </section>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(() =>
+        $(".slick").slick({
+          centerMode: true,
+          slidesToShow: 3,
+          infinity: true,
+          speed: 500,
+        })
+      );
+
+      const viewValue = document.querySelector(".form__dynamic-value");
+      const range = document.querySelector(".form__range");
+      const cardsPrice = document.querySelectorAll(".card__result-price_bold");
+      const [firstCard, secontCard, threesCard] = cardsPrice;
+
+      range.addEventListener("change", function () {
+        viewValue.textContent = this.value;
+        firstCard.textContent = `${3500 * this.value}`;
+        secontCard.textContent = `${3900 * this.value}`;
+        threesCard.textContent = `${5100 * this.value}`;
+      });
+    </script>
+  </body>
+</html>
