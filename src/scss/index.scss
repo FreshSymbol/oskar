@@ -12,19 +12,6 @@ $middle-grey-color: #f4f6f7;
   background-origin: border-box;
 }
 
-%visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 body {
   width: 100%;
   font-family: "Montserrat", sans-serif;
@@ -71,7 +58,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     gap: 84px;
-    max-width: 100%;
+    width: 100%;
     max-height: 100px;
     background-color: $black-color;
   }
